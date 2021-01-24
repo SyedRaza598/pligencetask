@@ -1,0 +1,49 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: rem(60);
+  padding: rem(80) 0;
+  p {
+    color: #fff;
+    font-size: rem(18);
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    display: inline;
+  }
+  ul {
+    list-style: none;
+    li {
+      font-size: rem(14);
+      color: #fff;
+      text-transform: capitalize;
+      margin-top: rem(15);
+    }
+  }
+  &--brand {
+    &--logo {
+      a {
+        img {
+          width: rem(120);
+          height: auto;
+        }
+      }
+    }
+    p {
+      border-bottom: none;
+      font-size: rem(16);
+      margin-top: rem(40);
+      display: block;
+    }
+    .heroSection--content__socialIcons {
+      margin-left: -10px;
+    }
+  }
+  &--empty {
+    p {
+      opacity: 0;
+    }
+  }
+}
+.footer--wrapper {
+  border-top: 1px solid rgb(17, 15, 53);
+}

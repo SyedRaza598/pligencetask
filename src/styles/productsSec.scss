@@ -1,0 +1,23 @@
+.products {
+  background-color: var(--backgroundColor);
+  text-align: center;
+  padding: rem(80px) 0;
+  h1 {
+    font-size: rem(50px);
+    font-weight: 700;
+    color: #fff;
+  }
+  & > p {
+    font-size: rem(16px);
+    font-weight: normal;
+    color: #fff;
+    margin-top: 20px;
+    padding: 0 rem(80);
+  }
+  &--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: rem(60px);
+  }
+}
